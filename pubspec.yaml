@@ -1,8 +1,8 @@
-name: stisla_generator
+name: stisla
 version: 0.0.1
 description: Paket untuk membuat komponen Flutter Stisla dengan CLI
-homepage: https://github.com/rizaldinaldianputra/stisla-flutter
-repository: https://github.com/rizaldinaldianputra/stisla-flutter
+homepage: https://github.com/username/stisla_generator
+repository: https://github.com/username/stisla_generator
 environment:
   sdk: ">=3.0.0 <4.0.0"
 
