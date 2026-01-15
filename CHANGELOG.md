@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.6]
+
+All Component Add
+
 ## [0.0.5]
 
 Change README.md
