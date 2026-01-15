@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:skycosmic/skycosmic_generator.dart';
+import 'package:skycosmic/skycosmic.dart';
 
 void main(List<String> arguments) {
   if (arguments.length < 2) {
