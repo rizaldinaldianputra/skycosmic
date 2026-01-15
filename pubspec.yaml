@@ -1,13 +1,13 @@
-name: stisla
-version: 0.0.1
-description: Paket untuk membuat komponen Flutter Stisla dengan CLI
-homepage: https://github.com/username/stisla_generator
-repository: https://github.com/username/stisla_generator
+name: skycosmic
+version: 0.0.4
+description: A professional Flutter package providing ready-to-use UI components with CLI support, enabling rapid and consistent UI development.
+homepage: https://github.com/rizaldinaldianputra/skycosmic
+repository: https://github.com/rizaldinaldianputra/skycosmic
 environment:
   sdk: ">=3.0.0 <4.0.0"
 
 executables:
-  stisla: stisla
+  skycosmic: skycosmic
 
 dependencies:
   flutter:

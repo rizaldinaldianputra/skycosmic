@@ -1,15 +1,20 @@
-library stisla_generator;
+library skycosmic;
 
 import 'dart:io';
 
-class StislaGenerator {
-  /// Generate komponen dari template
+/// A utility class to generate Flutter components from predefined templates.
+class CosmicGenerator {
+  /// Generates a component from a template.
+  ///
+  /// [componentName] is the name of the component to create.
+  /// [templateName] is the template to use (default is 'button').
   static void generate(String componentName, {String templateName = 'button'}) {
-    print('Membuat komponen $componentName dari template $templateName...');
+    print('Creating component $componentName from template $templateName...');
 
     final templateFile = File('templates/$templateName.dart.tpl');
     if (!templateFile.existsSync()) {
-      print('Template $templateName tidak ditemukan! Gunakan default "button"');
+      print(
+          'Template $templateName not found! Using default "button" template.');
       return;
     }
 
@@ -24,11 +29,12 @@ class StislaGenerator {
     final outputFile =
         File('lib/components/${componentName.toLowerCase()}.dart');
     if (outputFile.existsSync()) {
-      print('File ${outputFile.path} sudah ada!');
+      print('File ${outputFile.path} already exists!');
       return;
     }
 
     outputFile.writeAsStringSync(template);
-    print('Komponen $componentName berhasil dibuat di ${outputFile.path}');
+    print(
+        'Component $componentName successfully created at ${outputFile.path}');
   }
 }
