@@ -12,7 +12,7 @@ class {{ComponentName}} extends StatelessWidget implements PreferredSizeWidget {
   final Color? backgroundColor;
   final Color? foregroundColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.title,
     this.showBackButton = true,
@@ -50,14 +50,14 @@ class {{ComponentName}} extends StatelessWidget implements PreferredSizeWidget {
 ''',
     'bottom_nav': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;
   final List<BottomNavigationBarItem> items;
   final Color? selectedItemColor;
   final Color? unselectedItemColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.currentIndex,
     required this.onTap,
@@ -108,7 +108,7 @@ enum CosmicButtonType {
   cosmicViolet,
 }
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final CosmicButtonType type;
   final double? width;
   final double? height;
@@ -116,7 +116,7 @@ class {{ComponentName}} extends StatelessWidget {
   final Widget? child;
   final VoidCallback? onPressed;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     this.type = CosmicButtonType.cosmicBlue,
     this.width,
@@ -237,7 +237,7 @@ enum CosmicCardType {
   cosmicOrange,
 }
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final CosmicCardType type;
   final Widget? child;
   final double? width;
@@ -247,7 +247,7 @@ class {{ComponentName}} extends StatelessWidget {
   final double elevation;
   final VoidCallback? onTap;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     this.type = CosmicCardType.primary,
     this.child,
@@ -351,13 +351,13 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'checkbox': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final bool value;
   final ValueChanged<bool?> onChanged;
   final String? label;
   final Color activeColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.value,
     required this.onChanged,
@@ -401,14 +401,14 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'column': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final List<Widget> children;
   final MainAxisAlignment mainAxisAlignment;
   final CrossAxisAlignment crossAxisAlignment;
   final MainAxisSize mainAxisSize;
   final double spacing;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.children,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -456,7 +456,7 @@ enum CosmicContainerStyle {
   gradientSunset,
 }
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final Widget? child;
   final double? width;
   final double? height;
@@ -466,7 +466,7 @@ class {{ComponentName}} extends StatelessWidget {
   final double borderRadius;
   final VoidCallback? onTap;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     this.child,
     this.width,
@@ -570,13 +570,13 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'drawer': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final String headerTitle;
   final String? headerSubtitle;
   final List<Widget> items;
   final Color? headerColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.headerTitle,
     this.headerSubtitle,
@@ -633,7 +633,7 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'gridview': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final List<Widget> children;
   final int crossAxisCount;
   final double mainAxisSpacing;
@@ -643,7 +643,7 @@ class {{ComponentName}} extends StatelessWidget {
   final bool shrinkWrap;
   final ScrollPhysics? physics;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.children,
     this.crossAxisCount = 2,
@@ -675,7 +675,7 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'icon': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final IconData icon;
   final Color? color;
   final double size;
@@ -683,7 +683,7 @@ class {{ComponentName}} extends StatelessWidget {
   final double borderRadius;
   final VoidCallback? onTap;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.icon,
     this.color,
@@ -725,7 +725,7 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'image': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final String imageUrl;
   final double? width;
   final double? height;
@@ -734,7 +734,7 @@ class {{ComponentName}} extends StatelessWidget {
   final Widget? placeholder;
   final Widget? errorWidget;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.imageUrl,
     this.width,
@@ -814,7 +814,7 @@ enum CosmicListTileType {
   cosmicOrange,
 }
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final CosmicListTileType type;
   final Widget? leading;
   final Widget? trailing;
@@ -824,7 +824,7 @@ class {{ComponentName}} extends StatelessWidget {
   final EdgeInsetsGeometry padding;
   final double borderRadius;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     this.type = CosmicListTileType.primary,
     this.leading,
@@ -940,14 +940,14 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'listview': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final List<Widget> children;
   final EdgeInsetsGeometry padding;
   final bool shrinkWrap;
   final ScrollPhysics? physics;
   final double spacing;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.children,
     this.padding = const EdgeInsets.all(16),
@@ -978,7 +978,7 @@ class {{ComponentName}}<T> extends StatelessWidget {
   final String? label;
   final Color activeColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.value,
     required this.groupValue,
@@ -1018,14 +1018,14 @@ class {{ComponentName}}<T> extends StatelessWidget {
 ''',
     'row': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final List<Widget> children;
   final MainAxisAlignment mainAxisAlignment;
   final CrossAxisAlignment crossAxisAlignment;
   final MainAxisSize mainAxisSize;
   final double spacing;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.children,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -1063,7 +1063,7 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'scaffold': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final Widget body;
   final PreferredSizeWidget? appBar;
   final Widget? floatingActionButton;
@@ -1071,7 +1071,7 @@ class {{ComponentName}} extends StatelessWidget {
   final Widget? bottomNavigationBar;
   final Color? backgroundColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.body,
     this.appBar,
@@ -1098,13 +1098,13 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'stack': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final List<Widget> children;
   final AlignmentGeometry alignment;
   final StackFit fit;
   final Clip clipBehavior;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.children,
     this.alignment = AlignmentDirectional.topStart,
@@ -1125,13 +1125,13 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'switch': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final bool value;
   final ValueChanged<bool> onChanged;
   final String? label;
   final Color activeColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.value,
     required this.onChanged,
@@ -1183,7 +1183,7 @@ enum CosmicTextType {
   button,
 }
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final String text;
   final CosmicTextType type;
   final Color? color;
@@ -1287,7 +1287,7 @@ class {{ComponentName}} extends StatelessWidget {
 ''',
     'textfield': r'''import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final TextEditingController? controller;
   final String? hintText;
   final String? labelText;
@@ -1298,7 +1298,7 @@ class {{ComponentName}} extends StatelessWidget {
   final String? Function(String?)? validator;
   final ValueChanged<String>? onChanged;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     this.controller,
     this.hintText,

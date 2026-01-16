@@ -16,19 +16,23 @@
 ## 🚀 Installation
 
 ### Global Activation (Recommended for CLI)
+
 To use the `skycosmic` command anywhere in your terminal, activate it globally.
 
 **From Pub.dev (if published):**
+
 ```bash
 dart pub global activate skycosmic
 ```
 
 **From Local Source (for development):**
+
 ```bash
 dart pub global activate --source path .
 ```
 
 ### Add as Dependency
+
 To use the library symbols in your project, add it to your `pubspec.yaml`:
 
 ```yaml
@@ -45,9 +49,11 @@ flutter pub add skycosmic
 ## 📖 Usage
 
 ### Using the CLI
+
 The SkyCosmic CLI allows you to generate new components effortlessly.
 
 **Syntax:**
+
 ```bash
 skycosmic create <ComponentName>
 ```
@@ -55,22 +61,28 @@ skycosmic create <ComponentName>
 **Examples:**
 
 Generate a standard Button component:
+
 ```bash
 skycosmic create Button
 ```
-*Creates `lib/components/button.dart` from the Button template.*
+
+_Creates `lib/components/button.dart` containing `SkyCosmicButton`._
 
 Generate a Card component:
+
 ```bash
 skycosmic create Card
 ```
-*Creates `lib/components/card.dart` from the Card template.*
+
+_Creates `lib/components/card.dart` containing `SkyCosmicCard`._
 
 Generate a ListTile component:
+
 ```bash
 skycosmic create Listile
 ```
-*Creates `lib/components/listile.dart` from the ListTile template.*
+
+_Creates `lib/components/listile.dart` containing `SkyCosmicListile`._
 
 > **Note:** The CLI generates components using bundled templates (bundled in `lib/templates.dart`). If no specific template matches your request, it defaults to the **Button** template.
 
@@ -78,12 +90,12 @@ skycosmic create Listile
 
 - **bin/**: Contains the CLI entry point (`skycosmic.dart`).
 - **lib/**:
-    - `skycosmic.dart`: Core library and generator logic.
-    - `components/`: Generated components will be placed here by the CLI.
+  - `skycosmic.dart`: Core library and generator logic.
+  - `components/`: Generated components will be placed here by the CLI.
 - **templates/**: Source Dart templates (`.tpl`) used for generation.
-    - `button.dart.tpl`
-    - `card.dart.tpl`
-    - `listile.dart.tpl`
+  - `button.dart.tpl`
+  - `card.dart.tpl`
+  - `listile.dart.tpl`
 
 ## 🤝 Contributing
 
@@ -98,3 +110,5 @@ Contributions are welcome! If you'd like to improve SkyCosmic or add new templat
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+SkyCosmic is created by ©Rizaldi Naldian Putra

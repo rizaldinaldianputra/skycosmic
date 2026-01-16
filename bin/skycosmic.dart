@@ -17,8 +17,12 @@ void main(List<String> arguments) {
   }
 
   // Automatically use component name as template
+  final formattedName = componentName.isEmpty
+      ? componentName
+      : componentName[0].toUpperCase() + componentName.substring(1);
+
   CosmicGenerator.generate(
-    componentName,
+    formattedName,
     templateName: componentName.toLowerCase(),
   );
 }
