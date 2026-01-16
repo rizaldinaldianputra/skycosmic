@@ -1,13 +1,26 @@
+/// A command-line tool for generating Flutter components with predefined templates.
+///
+/// This library provides the core functionality for the Skycosmic CLI,
+/// allowing developers to quickly scaffold UI components.
+library;
+
 import 'dart:io';
 
 import 'templates.dart';
 
 /// A utility class to generate Flutter components from predefined templates.
+///
+/// Use [CosmicGenerator.generate] to create new component files.
 class CosmicGenerator {
   /// Generates a component from a template.
   ///
   /// [componentName] is the name of the component to create.
   /// [templateName] is the template to use (default is 'button').
+  ///
+  /// Example usage:
+  /// ```dart
+  /// CosmicGenerator.generate('MyButton', templateName: 'button');
+  /// ```
   static void generate(String componentName, {String templateName = 'button'}) {
     print('Creating component $componentName from template $templateName...');
 

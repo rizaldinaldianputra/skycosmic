@@ -7,56 +7,70 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.9] - 2026-01-16
+
+### 📝 Documentation
+- **Public API**: Added comprehensive documentation comments for `skycosmic` library, `CosmicGenerator`, and `CosmicTemplates`.
+- **Example**: Added `example/skycosmic_example.dart` to demonstrate programmatic usage of the generator.
+
+---
+
 ## [0.0.8]
 
-Change Class Name Component
+### ♻️ Refactoring
+- **Naming Convention**: Updated component class names to be prefixed with `SkyCosmic` (e.g., `SkyCosmicButton`) for consistency and to avoid conflicts.
+
+---
 
 ## [0.0.7]
 
-Fix CLI Cosmic
+### 🐛 Bug Fixes
+- **CLI**: Resolved issues with the `skycosmic` CLI where templates were not being correctly identified in some environments.
+
+---
 
 ## [0.0.6]
 
-Add All Component
+### ✨ New Features
+- **Components**: Added a comprehensive suite of new components including `AppBar`, `BottomNav`, `Checkbox`, `Column`, `Container`, `Drawer`, `GridView`, `Icon`, and `Image`.
+
+---
 
 ## [0.0.5]
 
-Change README.md
+### 📝 Documentation
+- **README**: Updated `README.md` with professional formatting, installation instructions, and detailed feature descriptions.
+
+---
 
 ## [0.0.4]
 
-### Added
+### ✨ New Features
+- **CosmicCard**: Introduced `CosmicCard` widget with customizable gradient, padding, borderRadius, and onTap actions.
+- **CosmicListTile**: Added `CosmicListTile` widget with 10 common type options and customizable leading, trailing, title, and subtitle.
+- **CosmicButton**: Enhanced `CosmicButtonWidget` with 10 predefined gradient types and optional parameters for width, height, and borderRadius.
 
-- Introduced `CosmicCard` widget with customizable gradient, padding, borderRadius, and onTap.
-- Added `CosmicListTile` widget with 10 common type options and customizable leading, trailing, title, and subtitle.
-- Enhanced `CosmicButtonWidget` with 10 predefined gradient types and optional parameters for width, height, borderRadius, and child.
+### ⚡ Changes
+- **Styling**: Updated `CosmicButtonWidget` gradient logic for better visual consistency.
+- **API**: Refactored widget constructors for improved flexibility and readability.
 
-### Changed
-
-- Updated `CosmicButtonWidget` gradient logic for better visual consistency.
-- Refactored widget constructors for improved flexibility and readability.
-
-### Fixed
-
-- Fixed minor gradient alignment issues in `CosmicButtonWidget`.
+### 🐛 Bug Fixes
+- **Styling**: Fixed minor gradient alignment issues in `CosmicButtonWidget`.
 
 ---
 
 ## [0.0.2] - 2026-01-10
 
-### Added
+### ✨ New Features
+- **Button**: Initial set of `CosmicButtonWidget` with basic gradient types: celestial blue, solar flare orange, nebula purple, aurora green, and mars red.
 
-- Initial set of `CosmicButtonWidget` with basic gradient types: cosmicBlue, cosmicOrange, cosmicPurple, cosmicGreen, cosmicRed.
-
-### Fixed
-
-- Corrected default height and borderRadius values for `CosmicButtonWidget`.
+### 🐛 Bug Fixes
+- **Layout**: Corrected default height and borderRadius values for `CosmicButtonWidget`.
 
 ---
 
 ## [0.0.1] - 2026-01-05
 
-### Added
-
-- Package scaffolding and CLI support (`skycosmic` executable).
-- Initial `CosmicButtonWidget` prototype with a single gradient type.
+### 🎉 Initial Release
+- **CLI**: Launched `skycosmic` executable for scaffolding projects.
+- **Core**: Initial `CosmicButtonWidget` prototype with single gradient support.

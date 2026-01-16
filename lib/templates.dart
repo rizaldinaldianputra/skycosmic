@@ -1,7 +1,17 @@
-/// Auto-generated templates for Skycosmic CLI
+/// Auto-generated templates for Skycosmic CLI.
+///
+/// This library contains strings for various Flutter component templates.
 library;
 
+/// A collection of predefined templates for generating Flutter components.
+///
+/// This class holds the implementation strings for different UI components
+/// supported by the Skycosmic CLI.
 class CosmicTemplates {
+  /// A map of template names to their source code content.
+  ///
+  /// Keys are template identifiers (e.g., 'button', 'card'), and values are
+  /// the Dart source code strings with placeholders like `{{ComponentName}}`.
   static const Map<String, String> templates = {
     'appbar': r'''import 'package:flutter/material.dart';
 
