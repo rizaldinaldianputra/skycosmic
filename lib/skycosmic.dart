@@ -1,6 +1,6 @@
-library skycosmic;
-
 import 'dart:io';
+
+import 'templates.dart';
 
 /// A utility class to generate Flutter components from predefined templates.
 class CosmicGenerator {
@@ -11,14 +11,15 @@ class CosmicGenerator {
   static void generate(String componentName, {String templateName = 'button'}) {
     print('Creating component $componentName from template $templateName...');
 
-    final templateFile = File('templates/$templateName.dart.tpl');
-    if (!templateFile.existsSync()) {
+    final templateContent = CosmicTemplates.templates[templateName];
+    if (templateContent == null) {
       print(
           'Template $templateName not found! Using default "button" template.');
+      generate(componentName, templateName: 'button');
       return;
     }
 
-    String template = templateFile.readAsStringSync();
+    String template = templateContent;
     template = template.replaceAll('{{ComponentName}}', componentName);
 
     final dir = Directory('lib/components');

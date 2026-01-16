@@ -16,10 +16,16 @@
 ## 🚀 Installation
 
 ### Global Activation (Recommended for CLI)
-To use the `skycosmic` command anywhere in your terminal, activate it globally:
+To use the `skycosmic` command anywhere in your terminal, activate it globally.
 
+**From Pub.dev (if published):**
 ```bash
 dart pub global activate skycosmic
+```
+
+**From Local Source (for development):**
+```bash
+dart pub global activate --source path .
 ```
 
 ### Add as Dependency
@@ -66,7 +72,7 @@ skycosmic create Listile
 ```
 *Creates `lib/components/listile.dart` from the ListTile template.*
 
-> **Note:** The CLI attempts to match the `<ComponentName>` (case-insensitive) to an available template in the `templates/` directory. If no specific template matches, it defaults to the **Button** template but preserves your specified Component Name in the code.
+> **Note:** The CLI generates components using bundled templates (bundled in `lib/templates.dart`). If no specific template matches your request, it defaults to the **Button** template.
 
 ## 📂 Project Structure
 
