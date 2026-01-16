@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.8]
+
+Change Class Name Component
+
 ## [0.0.7]
 
 Fix CLI Cosmic
