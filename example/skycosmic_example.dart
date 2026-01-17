@@ -1,15 +1,63 @@
-import 'package:skycosmic/skycosmic.dart';
+import 'package:flutter/material.dart';
 
 void main() {
-  print('Running skycosmic example...');
+  runApp(const MyApp());
+}
 
-  // Generate a button component named 'MyButton'
-  // using the default 'button' template.
-  CosmicGenerator.generate('MyButton', type: 'component');
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  // Generate a card component named 'MyCard'
-  // using the 'card' template.
-  CosmicGenerator.generate('MyCard', type: 'component');
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-  print('Example finished. Check lib/components for generated files.');
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // This method is rerun every time setState is called, for instance as done
+    // by the _incrementCounter method above.
+    //
+    // The Flutter framework has been optimized to make rerunning build methods
+    // fast, so that you can just rebuild anything that needs updating rather
+    // than having to individually change instances of widgets.
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+      ),
+      body: Column(
+        children: [
+          // SkyCosmicButton(type: CosmicButtonType.cosmicBlue, onPressed: () {}),
+          // SkyCosmicCard(
+          //   type: CosmicCardType.cosmicBlue,
+          //   child: Text('Sky Cosmic Card'),
+          // ),
+        ],
+      ),
+    );
+  }
 }
