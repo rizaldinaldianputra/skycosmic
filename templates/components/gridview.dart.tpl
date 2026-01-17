@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final List<Widget> children;
   final int crossAxisCount;
   final double mainAxisSpacing;
@@ -10,7 +10,7 @@ class {{ComponentName}} extends StatelessWidget {
   final bool shrinkWrap;
   final ScrollPhysics? physics;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.children,
     this.crossAxisCount = 2,

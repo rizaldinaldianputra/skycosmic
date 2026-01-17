@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final List<Widget> children;
   final MainAxisAlignment mainAxisAlignment;
   final CrossAxisAlignment crossAxisAlignment;
   final MainAxisSize mainAxisSize;
   final double spacing;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.children,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -23,10 +23,10 @@ class {{ComponentName}} extends StatelessWidget {
       for (var i = 0; i < children.length; i++) {
         spacedChildren.add(children[i]);
         if (i < children.length - 1) {
-          spacedChildren.add(SizedBox(height: spacing));
+          spacedChildren.add(SizedBox(width: spacing));
         }
       }
-      return Column(
+      return Row(
         mainAxisAlignment: mainAxisAlignment,
         crossAxisAlignment: crossAxisAlignment,
         mainAxisSize: mainAxisSize,
@@ -34,7 +34,7 @@ class {{ComponentName}} extends StatelessWidget {
       );
     }
 
-    return Column(
+    return Row(
       mainAxisAlignment: mainAxisAlignment,
       crossAxisAlignment: crossAxisAlignment,
       mainAxisSize: mainAxisSize,

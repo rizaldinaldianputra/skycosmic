@@ -5,11 +5,11 @@ void main() {
 
   // Generate a button component named 'MyButton'
   // using the default 'button' template.
-  CosmicGenerator.generate('MyButton', templateName: 'button');
+  CosmicGenerator.generate('MyButton', type: 'component');
 
   // Generate a card component named 'MyCard'
   // using the 'card' template.
-  CosmicGenerator.generate('MyCard', templateName: 'card');
+  CosmicGenerator.generate('MyCard', type: 'component');
 
   print('Example finished. Check lib/components for generated files.');
 }

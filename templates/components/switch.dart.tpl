@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}}<T> extends StatelessWidget {
-  final T value;
-  final T groupValue;
-  final ValueChanged<T?> onChanged;
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
+  final bool value;
+  final ValueChanged<bool> onChanged;
   final String? label;
   final Color activeColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.value,
-    required this.groupValue,
     required this.onChanged,
     this.label,
     this.activeColor = Colors.blue,
@@ -22,23 +20,22 @@ class {{ComponentName}}<T> extends StatelessWidget {
       return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Radio<T>(
+          Switch(
             value: value,
-            groupValue: groupValue,
             onChanged: onChanged,
             activeColor: activeColor,
           ),
+          const SizedBox(width: 8),
           GestureDetector(
-            onTap: () => onChanged(value),
+            onTap: () => onChanged(!value),
             child: Text(label!),
           ),
         ],
       );
     }
 
-    return Radio<T>(
+    return Switch(
       value: value,
-      groupValue: groupValue,
       onChanged: onChanged,
       activeColor: activeColor,
     );

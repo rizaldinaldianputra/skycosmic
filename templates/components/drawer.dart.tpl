@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final String headerTitle;
   final String? headerSubtitle;
   final List<Widget> items;
+  final bool enableGradient;
   final Color? headerColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.headerTitle,
     this.headerSubtitle,
     required this.items,
+    this.enableGradient = true,
     this.headerColor,
   });
 
@@ -21,7 +23,14 @@ class {{ComponentName}} extends StatelessWidget {
         children: [
           UserAccountsDrawerHeader(
             decoration: BoxDecoration(
-              color: headerColor ?? Colors.blue,
+              gradient: enableGradient
+                  ? const LinearGradient(
+                      colors: [Color(0xFF2193b0), Color(0xFF6dd5ed)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    )
+                  : null,
+              color: enableGradient ? null : (headerColor ?? Colors.blue),
             ),
             accountName: Text(
               headerTitle,
@@ -35,7 +44,7 @@ class {{ComponentName}} extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: headerColor ?? Colors.blue,
+                  color: headerColor ?? const Color(0xFF2193b0),
                 ),
               ),
             ),
@@ -48,10 +57,9 @@ class {{ComponentName}} extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            leading: const Icon(Icons.logout),
-            title: const Text('Logout'),
+            leading: const Icon(Icons.logout, color: Colors.red),
+            title: const Text('Logout', style: TextStyle(color: Colors.red)),
             onTap: () {
-              // Handle logout
               Navigator.pop(context);
             },
           ),

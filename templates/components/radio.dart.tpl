@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
-  final bool value;
-  final ValueChanged<bool?> onChanged;
+class SkyCosmic{{ComponentName}}<T> extends StatelessWidget {
+  final T value;
+  final T groupValue;
+  final ValueChanged<T?> onChanged;
   final String? label;
   final Color activeColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.value,
+    required this.groupValue,
     required this.onChanged,
     this.label,
     this.activeColor = Colors.blue,
@@ -20,30 +22,25 @@ class {{ComponentName}} extends StatelessWidget {
       return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Checkbox(
+          Radio<T>(
             value: value,
+            groupValue: groupValue,
             onChanged: onChanged,
             activeColor: activeColor,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(4),
-            ),
           ),
-          const SizedBox(width: 8),
           GestureDetector(
-            onTap: () => onChanged(!value),
+            onTap: () => onChanged(value),
             child: Text(label!),
           ),
         ],
       );
     }
-    
-    return Checkbox(
+
+    return Radio<T>(
       value: value,
+      groupValue: groupValue,
       onChanged: onChanged,
       activeColor: activeColor,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(4),
-      ),
     );
   }
 }

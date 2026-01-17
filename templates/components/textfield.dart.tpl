@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final TextEditingController? controller;
   final String? hintText;
   final String? labelText;
@@ -11,7 +11,7 @@ class {{ComponentName}} extends StatelessWidget {
   final String? Function(String?)? validator;
   final ValueChanged<String>? onChanged;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     this.controller,
     this.hintText,

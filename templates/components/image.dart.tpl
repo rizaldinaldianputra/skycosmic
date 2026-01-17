@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final String imageUrl;
   final double? width;
   final double? height;
@@ -9,7 +9,7 @@ class {{ComponentName}} extends StatelessWidget {
   final Widget? placeholder;
   final Widget? errorWidget;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.imageUrl,
     this.width,

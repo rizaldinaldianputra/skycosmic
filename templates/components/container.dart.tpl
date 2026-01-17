@@ -10,7 +10,7 @@ enum CosmicContainerStyle {
   gradientSunset,
 }
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final Widget? child;
   final double? width;
   final double? height;
@@ -20,7 +20,7 @@ class {{ComponentName}} extends StatelessWidget {
   final double borderRadius;
   final VoidCallback? onTap;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     this.child,
     this.width,

@@ -14,7 +14,7 @@ enum CosmicTextType {
   button,
 }
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final String text;
   final CosmicTextType type;
   final Color? color;
@@ -22,7 +22,7 @@ class {{ComponentName}} extends StatelessWidget {
   final int? maxLines;
   final TextOverflow? overflow;
 
-  const {{ComponentName}}(
+  const SkyCosmic{{ComponentName}}(
     this.text, {
     super.key,
     this.type = CosmicTextType.bodyMedium,

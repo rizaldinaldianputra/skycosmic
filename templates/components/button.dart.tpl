@@ -13,7 +13,7 @@ enum CosmicButtonType {
   cosmicViolet,
 }
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final CosmicButtonType type;
   final double? width;
   final double? height;
@@ -21,7 +21,7 @@ class {{ComponentName}} extends StatelessWidget {
   final Widget? child;
   final VoidCallback? onPressed;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     this.type = CosmicButtonType.cosmicBlue,
     this.width,

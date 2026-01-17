@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final List<Widget> children;
   final AlignmentGeometry alignment;
   final StackFit fit;
   final Clip clipBehavior;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.children,
     this.alignment = AlignmentDirectional.topStart,

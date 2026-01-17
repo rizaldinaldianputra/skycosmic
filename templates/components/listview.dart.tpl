@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final List<Widget> children;
   final EdgeInsetsGeometry padding;
   final bool shrinkWrap;
   final ScrollPhysics? physics;
   final double spacing;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.children,
     this.padding = const EdgeInsets.all(16),

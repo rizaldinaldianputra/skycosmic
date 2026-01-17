@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final bool value;
-  final ValueChanged<bool> onChanged;
+  final ValueChanged<bool?> onChanged;
   final String? label;
   final Color activeColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.value,
     required this.onChanged,
@@ -20,10 +20,13 @@ class {{ComponentName}} extends StatelessWidget {
       return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Switch(
+          Checkbox(
             value: value,
             onChanged: onChanged,
             activeColor: activeColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(4),
+            ),
           ),
           const SizedBox(width: 8),
           GestureDetector(
@@ -33,11 +36,14 @@ class {{ComponentName}} extends StatelessWidget {
         ],
       );
     }
-
-    return Switch(
+    
+    return Checkbox(
       value: value,
       onChanged: onChanged,
       activeColor: activeColor,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(4),
+      ),
     );
   }
 }

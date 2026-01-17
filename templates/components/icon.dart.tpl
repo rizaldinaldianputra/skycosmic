@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final IconData icon;
   final Color? color;
   final double size;
@@ -8,7 +8,7 @@ class {{ComponentName}} extends StatelessWidget {
   final double borderRadius;
   final VoidCallback? onTap;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.icon,
     this.color,

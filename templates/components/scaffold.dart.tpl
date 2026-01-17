@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class {{ComponentName}} extends StatelessWidget {
+class SkyCosmic{{ComponentName}} extends StatelessWidget {
   final Widget body;
   final PreferredSizeWidget? appBar;
   final Widget? floatingActionButton;
@@ -8,7 +8,7 @@ class {{ComponentName}} extends StatelessWidget {
   final Widget? bottomNavigationBar;
   final Color? backgroundColor;
 
-  const {{ComponentName}}({
+  const SkyCosmic{{ComponentName}}({
     super.key,
     required this.body,
     this.appBar,
