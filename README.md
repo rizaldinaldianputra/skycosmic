@@ -121,3 +121,4 @@ Contributions are welcome! If you'd like to improve SkyCosmic or add new templat
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+createBy © Rizaldi Naldian Putra
