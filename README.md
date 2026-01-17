@@ -61,6 +61,16 @@ skycosmic create <ComponentName>
 
 **Examples:**
 
+### Create a UI Screen
+
+To generate a full UI screen (e.g., Login, Profile):
+
+```bash
+skycosmic create login
+```
+
+This will create `lib/ui/sky_cosmic_login.dart`.
+
 Generate a standard Button component:
 
 ```bash
